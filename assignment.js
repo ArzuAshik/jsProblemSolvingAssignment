@@ -1,3 +1,4 @@
+// Problem 01
 function feetToMile(feet){
     if(feet >= 0){
         const mile = feet / 5280;
@@ -6,14 +7,16 @@ function feetToMile(feet){
     return "Please Enter a valid Value of Foot";
 }
 
+// Problem 02
 function woodCalculator(chair, table, bed){
     if(chair >= 0 && table >= 0 && bed >= 0){
         const totalWood = chair + (table * 3) + (bed * 5);
         return totalWood;
     }
-    return "Please Enter values equale or higher then zero";
+    return "Please Enter values equale or greater than zero";
 }
 
+// Problem 03
 function brickCalculator(floor){
     let brick = 0;
     if(floor > 0 && floor <= 10){
@@ -32,6 +35,7 @@ function brickCalculator(floor){
     return brick;
 }
 
+// Problem 04
 function tinyFriend(friends){
     if(friends.length > 0){
         for(var i = 0; i < friends.length; i++){
@@ -44,7 +48,7 @@ function tinyFriend(friends){
         if(check == 1){            
             let tinyFriend = friends[0];
             for(i = 0; i < friends.length; i++){
-                if(tinyFriend.length > friends[i].length){
+                if(tinyFriend.length > friends[i].length && friends[i] != "" && friends[i] != " "){
                     tinyFriend = friends[i];
                 }
             }
@@ -60,7 +64,7 @@ const
 foot = 45,
 chair = 5, table = 2, bed = 2,
 floor = 41;
-arrayOfFriends = ["Md. Ashikur Rahman Arzu", "xyz", "seess", "AR", "Arzu", "Ashik", "Anando"];
+arrayOfFriends = ["Md. Ashikur Rahman Arzu", "xyz", "seess", "AR", "Arzu", "Ashik", "Anando", "", "  "];
 
 // Call Functions
 const mile = feetToMile(foot);
